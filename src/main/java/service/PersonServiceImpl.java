@@ -2,21 +2,18 @@ package service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.stereotype.Service;
 
 import model.Person;
 
 @Service("personService")
 public class PersonServiceImpl implements PersonService {
-
 	
+	public PersonServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	public List<Person> getPersons() {

@@ -3,7 +3,7 @@ package config;
 import org.springframework.context.annotation.*;
 import org.springframework.web.servlet.config.annotation.*;
 
-@Configuration  //indica que esta clase declara uno o más métodos anotados con @Bean, los cuales deben ser procesados por el contenedor de Spring para generar definiciones de los beans y peticiones de esos beans en tiempo de ejecución
+@Configuration  //indica que esta clase declara uno o mï¿½s mï¿½todos anotados con @Bean, los cuales deben ser procesados por el contenedor de Spring para generar definiciones de los beans y peticiones de esos beans en tiempo de ejecuciï¿½n
 @ComponentScan(basePackages={"resource","service"})
 @EnableWebMvc
 public class MvcConfig extends WebMvcConfigurerAdapter {
